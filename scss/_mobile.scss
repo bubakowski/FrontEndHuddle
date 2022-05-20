@@ -1,0 +1,45 @@
+@media screen and(max-width:375px) {
+	.wrapper {
+		flex-direction: column;
+		padding: 5%;
+        background: url(../images/bg-mobile.svg) no-repeat $violet ;
+		.logo {
+			width: 100%;
+
+			img {
+				width: 50%;
+			}
+		}
+		.article {
+			flex: 2;
+			width: 100%;
+			flex-direction: column;
+			justify-content: center;
+            margin-bottom: auto;
+			h1 {
+				width: 100%;
+                font-size: 1.7em;
+                text-align: center;
+			}
+            p{
+                text-align: center;
+            }
+            .button{
+                margin: 0 auto;
+                width: 60%;
+            }
+            .socials{
+               transform: translate(5%);
+                text-align: center;
+            }
+		}
+		.illustration {
+			display: flex;
+
+			flex: 1;
+			.image {
+                height: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+
+.wrapper {
+	@include Flex(center, center);
+	height: 100%;
+	width: 100%;
+
+	background: url(../images/bg-desktop.svg) no-repeat $violet;
+	background-size: contain;
+	box-sizing: border-box;
+	padding: 5%;
+	.logo {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+	.illustration {
+		@include Flex(center, center);
+		flex-direction: column;
+		height: 100%;
+		margin: auto 0;
+		flex: 5;
+        img{
+           
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+	}
+
+	.article {
+		@include Flex(center, center);
+		flex-direction: column;
+		width: 50%;
+		height: 100%;
+		padding-left: 2%;
+		flex: 4;
+		h1,
+		p {
+			color: white;
+			font-family: "Poppins", sans-serif;
+		}
+		h1{
+			width: 70%;
+		}
+		p {
+			font-family: "Open Sans", sans-serif;
+			
+			
+		}
+		.button {
+			padding: 2% 1%;
+			margin-top: 5%;
+			border-radius: 40px;
+			background-color: white;
+			box-shadow: 0px 2px 10px black;
+			text-align: center;
+			font-weight: 600;
+			width: 40%;
+			color: $violet;
+			transition: background-color ease 0.3s;
+		}
+		.button:hover {
+			background-color: $softMagenta;
+			cursor: pointer;
+		}
+		.socials {
+			position: absolute;
+			bottom: 5%;
+			right: 5%;
+			width: 100%;
+			text-align: end;
+			ion-icon {
+				font-size: 1.7em;
+				margin-left: 2%;
+				padding: 0.5%;
+				border: 2px solid white;
+				border-radius: 50%;
+				fill: white;
+                transition: all ease .3s;
+			}
+			ion-icon:hover {
+				fill: $softMagenta;
+                border: 2px solid $softMagenta;
+                cursor: pointer;
+			}
+		}
+	}
+	
+}
+body{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
